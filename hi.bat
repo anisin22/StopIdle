@@ -1,7 +1,7 @@
 @echo off
-cd "C:\Program Files (x86)\Internet Explorer"
+cd "Path to .exe"
 :loop
-Start "" /b iexplore.exe 
+Start "" /b <name>.exe 
 timeout /T 60 /nobreak >nul
-taskkill /IM iexplore.exe /F
+taskkill /IM <name>.exe  /F
 goto loop
